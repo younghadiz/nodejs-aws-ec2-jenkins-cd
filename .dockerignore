@@ -1,0 +1,14 @@
+.git
+.gitignore
+.github
+.gitlab-ci.yml
+Jenkinsfile
+README.md
+LICENSE
+docs
+node_modules
+coverage
+*.log
+.env
+.env.*
+.DS_Store 
