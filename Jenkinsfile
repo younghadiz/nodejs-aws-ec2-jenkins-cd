@@ -116,7 +116,7 @@ pipeline {
                     buildAndPushNodeImage(
                         env.DOCKER_IMAGE_REPOSITORY,
                         env.IMAGE_TAG,
-                        'docker-credentials',
+                        'dockerhub-creds',
                         '.'
                     )
                 }
