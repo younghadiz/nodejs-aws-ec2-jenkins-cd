@@ -51,6 +51,7 @@ pipeline {
                     set -eu
 
                     echo "Branch: ${BRANCH_NAME}"
+
                     echo "Node:"
                     node --version
 
@@ -60,17 +61,18 @@ pipeline {
                     echo "Docker:"
                     docker --version
 
-                    echo "Docker Compose:"
-                    docker compose version
-
                     echo "Git:"
                     git --version
 
                     echo "SSH:"
                     ssh -V
+
+                    echo "curl:"
+                    curl --version
                 '''
             }
         }
+
 
         /*
          * Tests run on every branch.
